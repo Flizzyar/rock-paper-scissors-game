@@ -1,0 +1,43 @@
+@font-face {
+    font-family: BBHSansHegarty;
+    src: url(./fonts/BBHSansHegarty-Regular.ttf);
+}
+
+* {
+    font-family: BBHSansHegarty, Arial, Helvetica, sans-serif;
+    letter-spacing: 0.05em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e05324;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.btn {
+    background-color: #c0441f; /* Nära bakgrundsfärg */
+    color: #fff8e1; /* Text svart */
+    border: none;
+    border-radius: 50px; /* Runda kanter */
+    padding: 0.8rem 2rem; /* Rund form */
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Ingen skugga initialt */
+}
+
+/* Hover-effekt som gör knappen “markerad” */
+.btn:hover {
+    background-color: #ff6b3c; /* Ljusare/orange nyans */
+    transform: scale(1.05); /* Lätt “pop” */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Skugga för djup */
+}
